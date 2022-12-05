@@ -12,7 +12,7 @@ export default function WelcomeView() {
   function avatar_wake_up() {
     setAvatartEyeType('Default');
     setAvatartMouthType('Smile');
-    setWelcomeMessage("It's great to see you here. Someone already told you that you look great today?");
+    setWelcomeMessage("It's great to see you here! Did someone already tell you that you look great today?");
   }
   
   // function avatar_sleep() {
@@ -21,27 +21,28 @@ export default function WelcomeView() {
   // }
   
   return  (
-    <div className={styles.WelcomeView} onMouseEnter={avatar_wake_up} /*onMouseLeave={avatar_sleep}*/>
+    <div className={styles.WelcomeView}>
       <br></br>
       <br></br>
       <h1>Hello there!</h1>
       <h2>I'm a software developer passionate about web programming.</h2>
-      <Avatar
-        style={{width: '275px', height: '275px'}}
-        id='my_avatar'
-        avatarStyle='Circle'
-        topType='ShortHairShortFlat'
-        accessoriesType='Blank'
-        hairColor='Blonde'
-        facialHairType='Blank'
-        clotheType='Hoodie'
-        clotheColor='Black'
-        eyeType={avatartEyeType}
-        eyebrowType='DefaultNatural'
-        mouthType={avatartMouthType}
-        skinColor='Pale'
-      />
-      <br></br>
+      <div onMouseEnter={avatar_wake_up} /*onMouseLeave={avatar_sleep}*/>
+        <Avatar
+          style={{width: '275px', height: '275px'}}
+          id='my_avatar'
+          avatarStyle='Circle'
+          topType='ShortHairShortFlat'
+          accessoriesType='Blank'
+          hairColor='Blonde'
+          facialHairType='Blank'
+          clotheType='Hoodie'
+          clotheColor='Black'
+          eyeType={avatartEyeType}
+          eyebrowType='DefaultNatural'
+          mouthType={avatartMouthType}
+          skinColor='Pale'
+        />
+      </div>
       <br></br>
       <Typography variant="h5" color="inherit" component="div">
         {welcomeMessage}

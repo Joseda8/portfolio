@@ -13,28 +13,28 @@ const projects_cards = [
   },
   {
     name: "Stickies", 
-    description: "I searched for a code on React that implements a sticky-notes interface, then I improved it with image and datetime support a backend on NodeJS with a Mongo database. I deployed all the architecture on Heroku and MongoDB Atlas.", 
+    description: "I searched on GitHub some codes to get a sticky notes interface, then I improved it with support for images, datetime and a NodeJS backend with a Mongo database. I published all this architecture on Heroku and MongoDB Atlas.", 
     tag: "stickies", 
     img: "https://i.ibb.co/Cbbqmrq/stickies.png",
     link: "https://sticky-minipancake.herokuapp.com/"
   },
   {
     name: "Battle Counter", 
-    description: "Have you ever had the need of tracking how many bets you have won against someone? Well, I and a friend do. That is why I made a web site using React, NodeJS and MongoDB to keep this counter of points.", 
+    description: "Have you ever had the need to track how many bets you have won against someone? Well, me and a friend do. That's why I made a website using React, NodeJS and MongoDB to keep this point counter.",
     tag: "battle_counter", 
     img: "https://i.ibb.co/M5KphDC/battle-counter.png",
     link: "https://battle-counter.herokuapp.com/"
   },
   {
     name: "Learning English", 
-    description: "I am good at making READMEs because I love having good documentation near by. Do not believe me? Take a look to the Markdown website I use to write some Tips and tricks related to English language stuff.", 
+    description: "I'm good at making README files because I love having good documentation on hand. Don't believe me? Take a look at the Markdown website I made to write some tips and tricks related to the English language.", 
     tag: "learning_english", 
     img: "https://i.ibb.co/K2drhd3/english-notes.png",
     link: "https://learning-english-joseda-eight.herokuapp.com/"
   },
   {
     name: "Refactor to C media application", 
-    description: "The graduation project I made to get my degree was very challenging! I refactored a GStreamer Media server using C to join its two processes in a single one. I also explored the EGLSream mechanism to share between two processes the media info the application was producing. Wanna read it?", 
+    description: "The graduation project I did to get my degree was very challenging! I refactored a GStreamer media server using C to merge its two processes into one. I also explored the EGLSream mechanism to share the multimedia information produced by the application between two processes. Do you want to read how my experience was when working for an NVIDIA partner?", 
     tag: "gstd", 
     img: "https://i.ibb.co/23DYFjs/tfg.png",
     link: "https://drive.google.com/file/d/1DH2ZSqaJ4McMMhGlTcL43OFhbXHswKfu/view"
@@ -57,37 +57,36 @@ const Projects = () => (
     <br/>
     <h1>Projects</h1>
     <Typography variant="h5" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-      I've worked some cool things on my own. You're welcome to take a look to my personal projects!
+      I've worked on some cool things independently. You're welcome to take a look at my personal projects!
     </Typography>
     <br/>
     <h2>Projects on cloud</h2>
     <Typography variant="h6" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-      I've made some websites with practical reasons, that's why they're on cloud and available to public! 
+      I've made some practical websites, that's why they're on cloud and available to the public! 
       Since it's free, all of them are deployed on Heroku, but I've also deployed web pages, microservices and databases on Azure.
     </Typography>
     <Box sx={{ flexGrow: 1 }} style={{padding:25}}>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {projects_cards.map((project_info, index) => (
           <Grid item xs={2} sm={4} md={4} key={index}>
-
-            <Card>
-              <CardActionArea href={project_info.link}>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={project_info.img}
-                  alt={project_info.tag}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {project_info.name}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {project_info.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+            <CardActionArea href={project_info.link} style={{minHeight: 300, height: "100%"}}>
+              <Card style={{minHeight: 300, height: "100%"}}>
+                  <CardMedia
+                    component="img"
+                    height="200"
+                    image={project_info.img}
+                    alt={project_info.tag}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {project_info.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {project_info.description}
+                    </Typography>
+                  </CardContent>
+              </Card>
+            </CardActionArea>
 
           </Grid>
         ))}
@@ -97,12 +96,12 @@ const Projects = () => (
     <Box>
       <h2>Web Programming with Python and JavaScript by Harvard University</h2>
       <Typography variant="h6" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-        During pandemic (2020) I took a free course offered by Harvard University and it was great! 
-        I was just starting my English studies and I got so much fun practicing while making cool projects using Python
-        and its frameworks Flask and Django. There's some vanilla JavaScript involved there though.
+        During the pandemic (2020) I took a free course offered by Harvard University, and it was great! 
+        I was just starting my English studies, and I got so much fun practicing while making cool projects using Python
+        and its frameworks Flask and Django. There's also some vanilla JavaScript involved.
       </Typography>
       <Typography variant="h5" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-        Take a look to the projects I made to get my certificate on this course!
+        Take a look at the projects I made to get my certificate on this course!
       </Typography>
 
       <Grid container justifyContent="center">

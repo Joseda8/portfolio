@@ -31,8 +31,6 @@ export default App;
 // https://mui.com/
 
 // "start": "react-scripts start",s
-
-
 // https://www.loginradius.com/blog/engineering/react-router-basics/
 // https://portfolio-jose-montoya.herokuapp.com/
 // https://mui.com/material-ui/customization/palette/

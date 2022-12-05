@@ -7,31 +7,32 @@ import Card from '@mui/material/Card';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
+import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed';
 
 const projects = [
   {
     name: 'Rockermind',
-    description: 'My capstone projects. If you are a fan you can follow bands and see their events, place owners create events and bands can make posts. But the website includes so many cool details that you should see now!',
+    description: 'My last project. If you are a fan you can follow bands and see their events, place owners can create events, bands can make posts... And some other cool things!',
     videoURI: 'https://www.youtube.com/embed/QS2AWl33ego',
   },
   {
     name: 'The Godfather',
-    description: 'Wow! This was my first project in this course, and it was just a vanilla HTML with CSS.',
+    description: 'This was my first project in this course! It was just a vanilla HTML with CSS talking about The Godfather movie.',
     videoURI: 'https://www.youtube.com/embed/h4-KqvuuB6s',
   },
   {
     name: 'My Book Reviewer',
-    description: 'This project is a platform built with Flask to upload reviews about books, see tops and comments from other users. I love the logo I made for this web site.',
+    description: 'This is a platform built with Flask to upload reviews about books. The user can also see ranks and comments from other users. I love the logo I made for this web site.',
     videoURI: 'https://www.youtube.com/embed/dQmHFoHSCIk',
   },
   {
     name: 'My Chat Room',
-    description: 'A chat website based on rooms, Flask and Web Sockets! I had to add a personal detail so I added a buzzing subsystem... Good Windows Messenger times after school.',
+    description: 'A chat based on rooms, Flask and Web Sockets! I had to add a personal detail so I added a buzzing subsystem... Good Windows Messenger times after school.',
     videoURI: 'https://www.youtube.com/embed/LR56QW9YIwU',
   },
   {
     name: "Panucci's Pizza",
-    description: "Yes, you noticed it... I love Futurama. So for this Django project I made a platform to order food from a pizza menu at Panucci's",
+    description: "Yes, you noticed it... I love Futurama. So for this Django project I made a web page to order food from a pizza menu at Panucci's.",
     videoURI: 'https://www.youtube.com/embed/cW_MZRgEzcU',
   },
 ];
@@ -73,7 +74,7 @@ function VideosCarousel() {
         enableMouseEvents
       >
         {projects.map((step) => (
-          <Card key={step.name}>
+          <Card key={step.name} style={{minHeight: 100, height: "100%"}}>
             <br/>
             <div style={{paddingLeft:30, paddingRight:30}}>
               <h2>{step.name}</h2>
@@ -81,9 +82,7 @@ function VideosCarousel() {
                 {step.description}
               </p>
             </div>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe title={step.label} class="embed-responsive-item" src={step.videoURI} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <YoutubeEmbed title={step.label} videoURI={step.videoURI}/>
             <br/>
           </Card>
         ))}

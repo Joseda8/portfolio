@@ -13,7 +13,7 @@ export default function SkillsSet() {
         <Grid container columns={{ xs: 4, sm: 8, md: 12 }}>
           <Grid item xs={4}>
 
-          <Card style={{height: 575}}>
+          <Card style={{minHeight: 575, height: "100%"}}>
               <br/>
               <DataObjectIcon fontSize="large" color="primary" />
               <br/>
@@ -39,10 +39,10 @@ export default function SkillsSet() {
                 Backend
               </Typography>
               <Typography variant="body2" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-                Python (Django, Flask), Rust (Rocket), NodeJS (ExpressJS), C/C++, Keycloak, GStreamer, Git.
+                Python (Django, Flask), Rust (Rocket), NodeJS (ExpressJS), C/C++, Keycloak, Krakend, GStreamer, Git.
               </Typography>
               <Typography variant="body2" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-                HTTP and MQTT.
+                HTTP, SSE, WebSockets and MQTT.
               </Typography>
               <Typography variant="body2" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
                 SQL, PostgreSQL, MySQL. MongoDB, Neo4j, Redis.
@@ -52,7 +52,7 @@ export default function SkillsSet() {
           </Grid>
           <Grid item xs={4}>
 
-          <Card style={{height: 575}}>
+          <Card style={{minHeight: 575, height: "100%"}}>
               <br/>
               <RocketLaunchIcon fontSize="large" color="primary" />
               <br/>
@@ -60,7 +60,7 @@ export default function SkillsSet() {
                 Deployment and building
               </Typography>
               <Typography variant="body1" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-                I have worked deploying software that I or someone else made.
+                I have deployed software made by me or someone else, on several hardware or cloud services.
               </Typography>
               <br/>
               <Typography variant="h6" color="primary" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
@@ -94,7 +94,7 @@ export default function SkillsSet() {
           </Grid>
           <Grid item xs={4}>
 
-          <Card style={{height: 575}}>
+          <Card style={{minHeight: 575, height: "100%"}}>
               <br/>
               <LightbulbIcon fontSize="large" color="primary" />
               <br/>
@@ -102,7 +102,7 @@ export default function SkillsSet() {
                 Other knowledge
               </Typography>
               <Typography variant="body1" color="inherit" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
-                From my hobbies and others I have developed some additional skills.
+                From my hobbies and extracurricular activities I have gained some additional skills.
               </Typography>
               <br/>
               <Typography variant="h6" color="primary" component="div" align="center" paragraph="true" style={{ marginLeft:"5%", marginRight:"5%" }}>
