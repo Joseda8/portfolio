@@ -23,14 +23,14 @@ const projects_cards = [
     description: "Have you ever had the need to track how many bets you have won against someone? Well, me and a friend do. That's why I made a website using React, NodeJS and MongoDB to keep this point counter.",
     tag: "battle_counter", 
     img: "https://i.ibb.co/M5KphDC/battle-counter.png",
-    link: "https://battle-counter.herokuapp.com/"
+    link: "https://battle-counter.onrender.com/"
   },
   {
     name: "Learning English", 
     description: "I'm good at making README files because I love having good documentation on hand. Don't believe me? Take a look at the Markdown website I made to write some tips and tricks related to the English language.", 
     tag: "learning_english", 
     img: "https://i.ibb.co/K2drhd3/english-notes.png",
-    link: "https://learning-english-joseda-eight.herokuapp.com/"
+    link: "https://learning-english-joseda-eight.onrender.com/"
   },
   {
     name: "Refactor to C media application", 
