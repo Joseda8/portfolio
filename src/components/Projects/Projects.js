@@ -5,13 +5,6 @@ import VideosCarousel from '../VideoCarousel/VideoCarousel';
 
 const projects_cards = [
   {
-    name: "Rockermind", 
-    description: "Thanks to this project I got my certificate on Web Programming with Python and JavaScript by Harvard University. I used Django to build a social network for rock bands, fans and place owners.", 
-    tag: "rockermind", 
-    img: "https://i.ibb.co/S7KJgXn/rockermind.png",
-    link: "https://fierce-earth-53714.herokuapp.com/rockermind/"
-  },
-  {
     name: "Stickies", 
     description: "I searched on GitHub some codes to get a sticky notes interface, then I improved it with support for images, datetime and a NodeJS backend with a Mongo database. I published all this architecture on Heroku and MongoDB Atlas.", 
     tag: "stickies", 
