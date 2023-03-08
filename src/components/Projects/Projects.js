@@ -9,7 +9,7 @@ const projects_cards = [
     description: "I searched on GitHub some codes to get a sticky notes interface, then I improved it with support for images, datetime and a NodeJS backend with a Mongo database. I published all this architecture on Heroku and MongoDB Atlas.", 
     tag: "stickies", 
     img: "https://i.ibb.co/Cbbqmrq/stickies.png",
-    link: "https://sticky-minipancake.herokuapp.com/"
+    link: "https://reminder-app-otdc.onrender.com/"
   },
   {
     name: "Battle Counter", 
