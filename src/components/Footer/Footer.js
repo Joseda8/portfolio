@@ -14,7 +14,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="#FFF" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://portfolio-jose-montoya.herokuapp.com/">
+      <Link color="inherit" href="https://portfolio-jose-montoya.onrender.com/">
         JDMS Portfolio
       </Link>{' '}
       {new Date().getFullYear()}

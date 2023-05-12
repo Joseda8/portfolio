@@ -24,7 +24,7 @@ const NavBar = () => {
               variant="h6"
               noWrap
               component="a"
-              href="https://portfolio-jose-montoya.herokuapp.com/"
+              href="https://portfolio-jose-montoya.onrender.com/"
               sx={{
                 mr: 2,
                 display: { xs: 'flex', md: 'flex' },
